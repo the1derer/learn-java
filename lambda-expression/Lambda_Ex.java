@@ -1,3 +1,8 @@
+Topic studied from following:
+https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html#approach3
+
+
+
 class Person {
   public emum Sex {
     MALE, FEMALE
@@ -86,8 +91,12 @@ class Person {
         block.accept(p);
       }
     }
-  } 
-    
+  }
+
+  // To invoke above method
+
+  processPersons(roster, )
+
 }
 
 // Part of Approach 3, 4, 5
