@@ -158,14 +158,14 @@ class StringEx1 {
  * TODO: understand 'getChars()' with example
  * 7. getChars() ==> public void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) ==> Copies characters from this string into the destination characterarray.
  * 
- * TODO: check example where we use 'fromIndex' too
+ *
  * 8. indexOf()==> finds the index of desired character/String in a given String
  *      public int indexOf(int ch)
  *      public int indexOf(int ch, int fromIndex)
  *      public int indexOf(String str)
  *      public int indexOf(String str, int fromIndex)
  * 
- * 9. lastIndexOf() ==> same as 'indexOf()' but searches from right
+ * 9. lastIndexOf() ==> same as 'indexOf()' but searches from right.
  * 
  * 10. replace() ==> replace some character with another character in the entire string
  * 
