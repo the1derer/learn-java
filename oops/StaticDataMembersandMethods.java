@@ -1,3 +1,4 @@
+package oops;
 public class StaticDataMembersandMethods {
 
   static String companyName = "tcs";

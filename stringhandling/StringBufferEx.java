@@ -1,0 +1,5 @@
+package stringhandling;
+
+class StringBufferEx {
+    
+}
