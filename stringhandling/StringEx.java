@@ -155,8 +155,8 @@ class StringEx1 {
  *              }
  *          } catch(Exception e) {Sysout("Unsupported chararcter set");}
  * 
- * TODO: understand 'getChars()' with example
- * 7. getChars() ==> public void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) ==> Copies characters from this string into the destination characterarray.
+ *
+ * 7. getChars() ==> public void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) ==> Copies characters from this string into the destination character-array.
  * 
  *
  * 8. indexOf()==> finds the index of desired character/String in a given String
