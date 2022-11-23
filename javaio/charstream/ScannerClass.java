@@ -10,7 +10,7 @@ public class ScannerClass {
      * But we can't give delimiters of choice. Predefined delimiters like space, tab and newline.
      */
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         double d = sc.nextDouble();
