@@ -1,4 +1,3 @@
-public class WrapperClass {
     /*
      * The objects of all the wrapper classes that can be instantiated are immutable.
      * 
@@ -38,8 +37,8 @@ public class WrapperClass {
      * int x= 10;
      * Integer i = x (boxing)
      * in z = i(unboxing)
-     * Each wrapper class defines the method which returns the primitive value in wrapper objects.
      * 
+     * Each wrapper class defines the method which returns the primitive value in wrapper objects :-
      * type typeValue()
      * Eg.
      * int intValue()
@@ -48,7 +47,7 @@ public class WrapperClass {
      * 
      * 
      * 
-     * Wrapper class coparision & Equality
+     * Wrapper class comparison & Equality
      * Each wrapper class implements comparable interface
      * Integer i = new Integer(10)
      * Integer z = new Integer(20)
@@ -77,4 +76,3 @@ public class WrapperClass {
      * int i1 = Integer.MIN_VALUE
      * int i2 = Integer.MAX_VALUE 
      */
-}
