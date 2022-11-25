@@ -11,16 +11,19 @@ Part of my daily plan for studying Java.
 
 - [] Tic Tac Toe of n * n
 
+```bash
     |   |
 ----+---+----
     |   |
 ----+---+----
     |   |
+```
 
 ---
 
 - [] Hangman
 
+```bash
 +------+
 |      |
 |     ( )
@@ -31,6 +34,7 @@ Part of my daily plan for studying Java.
 |    /   \
 |
 |___
+```
 
 ---
 
