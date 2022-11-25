@@ -3,7 +3,7 @@ import java.lang.invoke.ConstantCallSite;
 /**
  * JavaMath
  */
-public class JavaMath {
+public class MathClassDemo {
     
     public static void main(String[] args) {
 

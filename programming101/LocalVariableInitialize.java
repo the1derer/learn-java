@@ -1,3 +1,5 @@
+package programming101;
+
 class LocalVariableInitialize {
   public static void main(String[] args) {
     // int x; // this will give error as local variable always need to be initialize.

@@ -5,11 +5,11 @@ Part of my daily plan for studying Java.
 
 ## TUI
 
-- [] Rock Paper Scissor with n (odd) rounds
+* Rock Paper Scissor with n (odd) rounds
 
 ---
 
-- [] Tic Tac Toe of n * n
+* Tic Tac Toe of n * n
 
 ```bash
     |   |
@@ -21,7 +21,7 @@ Part of my daily plan for studying Java.
 
 ---
 
-- [] Hangman
+* Hangman
 
 ```bash
 +------+
@@ -40,4 +40,4 @@ Part of my daily plan for studying Java.
 
 ## Networking
 
-- [] File Copy over network -> I/O and network
+* File Copy over network -> I/O and network

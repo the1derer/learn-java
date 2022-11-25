@@ -1,3 +1,5 @@
+package programming101;
+
 public class IntegerLiteralTypeBinding  {
   static void show( byte b) {
     System.out.println("this is a byte");

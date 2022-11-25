@@ -1,3 +1,5 @@
+package programming101;
+
 public class IntegerLiteralTest {
   public static void main(String[] args) {
     byte b = 10;

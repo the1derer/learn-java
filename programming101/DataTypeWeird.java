@@ -1,4 +1,6 @@
-public class DataTypeweird {
+package programming101;
+
+public class DataTypeWeird {
 
   public static void main(String[] args) {
     byte b =10; // should give error but does not give error
