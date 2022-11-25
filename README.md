@@ -3,5 +3,37 @@ Part of my daily plan for studying Java.
 
 # Ideas
 
-- [] Hangman -> Basic TUI
-- [] File Copy over network --> I/O and network
+## TUI
+
+- [] Rock Paper Scissor with n (odd) rounds
+
+---
+
+- [] Tic Tac Toe of n * n
+
+    |   |
+----+---+----
+    |   |
+----+---+----
+    |   |
+
+---
+
+- [] Hangman
+
++------+
+|      |
+|     ( )
+|     /|\
+|    / | \
+|      |
+|     / \  
+|    /   \
+|
+|___
+
+---
+
+## Networking
+
+- [] File Copy over network -> I/O and network
