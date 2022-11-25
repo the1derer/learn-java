@@ -311,7 +311,7 @@ class Child12 extends Base12 {
 // Inheritance in contructors
 
 /*
- * Java compiler insert 'super()' at every constructor of every child as 1st line of consturctor.
+ * Java compiler insert 'super()' at every constructor of every child as 1st line of constructor.
  */
 
 class BB {
