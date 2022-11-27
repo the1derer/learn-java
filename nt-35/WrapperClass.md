@@ -15,7 +15,7 @@
      * IMP: Constructors has been deprecated and marked for removal, use 'valueOf()' instead.
      * 
      * 
-     * Converting String to wrapper objcts: use static method 'valueOf(String str)'
+     * Converting String to wrapper objects: use static method 'valueOf(String str)'
      * Eg.
      * Boolean b = Boolean.valueOf("true")
      * Integer z = Integer.valueOf("10")

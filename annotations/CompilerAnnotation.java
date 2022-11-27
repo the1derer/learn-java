@@ -23,7 +23,7 @@ class DeprecatedAndSuppressWarning {
 
     public void doSomeTestNow() {
 
-        @SuppressWarnings({"unchecked", "deprecated"})
+        // @SuppressWarnings({"unchecked", "deprecated"}) // TODO: Giving error
         display();
     }
 }
