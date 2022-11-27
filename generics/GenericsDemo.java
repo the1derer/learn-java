@@ -18,7 +18,7 @@ class Gen<T> {
     }  
 }
 
-public class GenDemo {
+public class GenericsDemo {
     public static void main(String[] args) {
         Gen<Integer> iOb = new Gen<Integer>(98);
         iOb.showType();
@@ -297,3 +297,5 @@ class HierDemo3 {
             System.out.println("iOb is instance of GenericChild");
     }
 }
+
+// TODO: Upper-bound and lower-bound wildcard --> <? extends Number> <? super Number>

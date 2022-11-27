@@ -1,4 +1,4 @@
-package javaregex;
+package regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /**
  * JavaRegEx
  */
-public class JavaRegEx {
+public class RegEx {
 
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("foo");
