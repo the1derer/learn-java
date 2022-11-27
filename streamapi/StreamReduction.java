@@ -7,12 +7,13 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+//TODO: Understand again
 public class StreamReduction {
 
 
-    // reduce()
-    int reducedTwoParams =
-  IntStream.range(1, 4).reduce(10, (a, b) -> a + b);
+   // reduce()
+   int reducedTwoParams =
+   IntStream.range(1, 4).reduce(10, (a, b) -> a + b);
 
   int reducedParams = Stream.of(1, 2, 3)
   .reduce(10, (a, b) -> a + b, (a, b) -> {
