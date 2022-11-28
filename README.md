@@ -2,14 +2,14 @@
 
 The repository contains notes and programs which I took and executed respectively while studying Java.
 
----
+<!-- --- -->
 
-## [Project Ideas](./ProjectIdeas.md)
+[**Project Ideas**](./ProjectIdeas.md)
 
----
+<!-- --- -->
 
-## [Java Pros and Cos](./JavaProsCons.md)
+[**Tools**](./JavaTools.md)
 
----
+<!-- --- -->
 
-## [Tools](./JavaTools.md)
+[**Java Pros and Cons**](./JavaProsCons.md)
