@@ -1,3 +1,0 @@
-# Functional Interface
-
-// TODO
