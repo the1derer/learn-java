@@ -1,4 +1,4 @@
-package programming101;
+package java101;
 
 public class IntegerLiteralTest {
   public static void main(String[] args) {

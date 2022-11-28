@@ -1,4 +1,4 @@
-package programming101;
+package java101;
 
 class MainExplicitCall {
   public static void main (String... s) {
