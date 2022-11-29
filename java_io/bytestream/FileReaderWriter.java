@@ -37,5 +37,5 @@ public class FileReaderWriter {
 }
 
 /*
- * While performing any operation on File like counting freq. of characters etc. don't perform directly on file, but instead export file datat to a string and perform operatn on this string. And then override the file. This will make things easier.
+ * While performing any operation on File like counting freq. of characters etc. don't perform directly on file, but instead export file data to a string and perform operatn on this string. And then override the file. This will make things easier.
  */
