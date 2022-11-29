@@ -27,7 +27,7 @@ The repository contains notes and programs which I took and executed respectivel
 * [I/O and File Handling](./java_io/Java_IO.md)
   * [`ByteStream`](./java_io/bytestream/ByteStream.md)
   * [`CharStream`](./java_io/charstream/CharStream.md)
-  * [Serialization and Deserialization](./java_101/serialization)
+  * [Serialization and Deserialization](./java_io/serialization/)
   * [`nio`](./java_io/nio_package/)
   * [Zip](./java_io/zip/)
 * [Networking]()
@@ -41,8 +41,11 @@ The repository contains notes and programs which I took and executed respectivel
 * `Object` class
 * Wrapper classes
 * `System` class
+  * [`System.out`/`System.in`](.java_io/bytestream/printstream/systemclass_out_in/SystemClass.md)
 * [`Math` Class]()
 * Date API
+* [AWT and Swing](./awt_swing/)
+  * [Event Handling](./awt_swing/awt_and_event_handling/)
 
 ## Short-forms
 
@@ -54,6 +57,7 @@ The repository contains notes and programs which I took and executed respectivel
 * psvm -> public static void main(String args[])
 * ref. -> reference
 * obj -> object
+* args -> arguments
 
 ##
 

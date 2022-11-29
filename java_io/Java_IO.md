@@ -27,7 +27,9 @@ Note:- Stream is referred as flow of bytes.
 
 ---
 
-## There are two types of Stream
+##  Classification of Streams
+
+### There are two types of Stream
 
 (i) Input Stream -> For input devices connectn.
 (ii) Output Stream -> For output device connectn.
@@ -52,6 +54,34 @@ Stream class
                                               |--> Writer(abstract) -> write(int i)
 
 ```
+
+## Low and High Level Streams
+
+Character and Byte Stream classes are further classified into low-level and high-level streams.
+
+### Low Level Streams
+Directly connected to any IO device.
+
+Java Program <-> FileIOStream <-> File
+
+### High Level Stream
+
+High level streams are connected to other streams. They are used to increase the performance of other stream. They are also known as 'filtered' stream.
+
+Java Program <--> BufferedIOStream <--> FileIOStream <--> File
+
+```java
+FileOPStream fout = new FileOPStream("abc.txt");
+BufferedOPStream bout = new BufferedOPStream(fout);
+
+DataOPStream dout = new DataOPStream(fout/bout/*object of input stream*/);
+// |-> There is a method of this class `readLine()` which reads line by line. 
+```
+
+Java Program <--> DataIOStream <--> BufferedIOStream <--> FileIOStream <--> File
+
+We can connect this `DataInputStream` to keyboard, network to readLine from keyboard etc.
+
 
 ## Some important points:-
 
