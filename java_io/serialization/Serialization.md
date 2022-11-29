@@ -75,4 +75,4 @@ If the receiver has loaded a class for the object that has a diff. 'serialVersio
 If a serializable class doesn't explicitly declare a 'serialVersionUID', then the serialization runtime will calculate a default 'serialVersionUID' value for that class based on various aspect of the class, as described in the Java Object Serialiaztion Specification.
 However, it is strongly recommended that serializable class explicitly declare 
 
-[serialization remaining notes]()
+[serialization remaining notes](./Serialization_remaining_notes.pdf)
