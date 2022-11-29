@@ -12,3 +12,6 @@ hs_err_pid*
 
 # vscode
 .vscode
+
+# test files generated while learning io
+java_io/**/*.txt

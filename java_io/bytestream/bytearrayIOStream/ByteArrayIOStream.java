@@ -2,11 +2,6 @@ package java_io.bytestream.bytearrayIOStream;
 
 import java.io.*;
 
-/*
- * Use to send same data to multiple destinaions, which is not possible using simple 'FileOPStream'.
- * Here we create a buffer but don't connect it to any device.
- * 
- */
 public class ByteArrayIOStream {
     public static void main(String[] args) throws IOException {
         ByteArrayOutputStream bOut = new ByteArrayOutputStream();
