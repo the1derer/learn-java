@@ -24,7 +24,7 @@
 6. `ZipFile`
 7. `ZipEntry`
 
-### [FileIOStream]('./fileIOstream/FileIOStream notes.pdf')
+### [FileIOStream](./fileIOstream/FileIOStream_notes.pdf)
 
 ### ByteArrayIOStream
 
