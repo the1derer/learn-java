@@ -13,6 +13,15 @@ class StringEx1 {
 
         if(s1==s2)  System.out.println("s1 s2 same"); // will work as they are in same are for all string literals known as "String Constant Pool"
         if(s1==s3) System.out.println("s1 s3 same"); // will not work as s3 is allocated 'new' memory.
+
+        System.out.println("--------String constructor-----");
+
+        String s1 = new String("hello");
+        String s2 = s1.intern(); // links object of SCP to s2, if not present in SCP it will create duplicate in SCP
+        String s3 = new String("Hello");
+        String s4 = s3.intern();
+
+        System.out.println(s2 == s4);
     }
 }
 

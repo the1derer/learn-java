@@ -11,18 +11,18 @@
 ## Following 6 classes represent string
 
 1. String Handing
-    a. java.lang.String       ]--> Immutable(values of this class can't be changed)
-    b. java.lang.StringBuffer ]--> Mutable
+    * java.lang.String       ]--> Immutable(values of this class can't be changed)
+    * java.lang.StringBuffer ]--> Mutable
 
 2. Threading
-    c. java.lang.StringBuilder
+    * java.lang.StringBuilder
 
 3. I/O
-    d. java.util.StringTokenizer
-    e. java.io. StringReader
-    f. java.io.StringWRiter
+    * java.util.StringTokenizer
+    * java.io. StringReader
+    * java.io.StringWRiter
 
-* Java has made this many classes to provide different types of manipulation on string.
+Java has made these many classes to provide different types of manipulation on string.
 
 ----
 
