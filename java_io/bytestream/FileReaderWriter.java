@@ -2,8 +2,6 @@ package java_io.bytestream;
 
 import java.io.*;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class FileReaderWriter {
     public static void main(String[] args) throws IOException {
         FileOutputStream fileWriter1 = new FileOutputStream("lallu.txt"); // creates this file parallel to class file
