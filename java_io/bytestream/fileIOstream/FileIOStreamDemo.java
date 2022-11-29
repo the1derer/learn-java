@@ -1,8 +1,8 @@
-package java_io.bytestream;
+package java_io.bytestream.fileIOstream;
 
 import java.io.*;
 
-public class FileReaderWriter {
+public class FileIOStreamDemo {
     public static void main(String[] args) throws IOException {
         FileOutputStream fileWriter1 = new FileOutputStream("lallu.txt"); // creates this file parallel to class file
         // new FileOutPutStream("lallu.txt", true) // append mode
@@ -33,7 +33,3 @@ public class FileReaderWriter {
         fileReader2.close();
     }
 }
-
-/*
- * While performing any operation on File like counting freq. of characters etc. don't perform directly on file, but instead export file data to a string and perform operatn on this string. And then override the file. This will make things easier.
- */

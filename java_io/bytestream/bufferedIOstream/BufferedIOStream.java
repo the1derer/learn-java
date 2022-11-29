@@ -1,4 +1,4 @@
-package java_io.bytestream;
+package java_io.bytestream.bufferedIOstream;
 
 /*
  * To increase performance 'BufferedIOStream' class is used which is ahight level stream. That means it connects to other stream which enables our program program to take multiple bytes.

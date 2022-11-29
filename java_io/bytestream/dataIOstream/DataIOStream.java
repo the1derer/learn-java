@@ -1,4 +1,4 @@
-package java_io.bytestream;
+package java_io.bytestream.dataIOstream;
 
 /*
  * DataOPStream dout = new DataOPStream(fout/bout); // DataOPStream has a methoid readLine() which reads line by line

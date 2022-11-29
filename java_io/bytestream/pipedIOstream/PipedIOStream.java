@@ -1,4 +1,4 @@
-package java_io.bytestream;
+package java_io.bytestream.pipedIOstream;
 
 /*
  * This is used to simultaneously read and write data.

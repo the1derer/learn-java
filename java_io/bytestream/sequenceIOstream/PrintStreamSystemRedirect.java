@@ -1,4 +1,4 @@
-package java_io.bytestream;
+package java_io.bytestream.sequenceIOstream;
 
 import java.io.*;
 
