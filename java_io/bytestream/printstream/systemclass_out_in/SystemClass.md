@@ -10,7 +10,7 @@ public static PrintStream err = get___()
 public static PrintStream in  = get___()
 ```
 
-![working of `System.in`, `System.out` or `System.err`](./SystemPrintStream.jpg)
+<img src="./SystemPrintStream.jpg"  width="650" height="500">
 
 
 ## Difference b/w `System.out` and `System.err`:-
@@ -38,7 +38,9 @@ But if we use `System.err` we can't redirect using `>` or `>>`, instead we have 
 
 ## setOut/setErr (changing value of `System.out/err`)
 
-[PrintStreamRedirect.java](../PrintStreamSystemRedirect.java)
+[PrintStreamRedirect.java](../PrintStreamSetOutErrDemo.java)
+
+
 
 ## Redirect InputStream or `System.in`
 
@@ -57,3 +59,4 @@ System.setIn(fin);
 int x = System.in.read() // reading from file not keyboard
 ```
 
+[InputStream Notes](../../inputstream/InputStream_notes.pdf)

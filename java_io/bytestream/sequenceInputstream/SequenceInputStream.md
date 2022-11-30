@@ -11,4 +11,4 @@ i. Create a array of InputStream and put ll InputStream objects in this array.
 ii. Then override the method and return these Streams one-by-one until all objects re retunred..
 
 Note: 
-i. An extra `hasMoreElement()` is ran
+i. An extra `hasMoreElement()` is ran.

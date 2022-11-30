@@ -7,14 +7,15 @@ import java.io.InputStream;
 import java.io.SequenceInputStream;
 import java.util.Enumeration;
 
-// TODO: getting NullPointerException, debug this using debugging tool.
 public class SequenceInputStreamDemo {
     public static void main(String[] args) throws IOException {
         
-        // SequenceInputStream sequenceInputStream = new SequenceInputStream( // use this constructor if you have exactly 2 InputStream
-        //     new FileInputStream("shubham.txt"),
-        //     new FileInputStream("shubham123.txt")
-        // );
+        /*
+            SequenceInputStream sequenceInputStream = new SequenceInputStream( // use this constructor if you have exactly 2 InputStream
+                new FileInputStream("shubham.txt"),
+                new FileInputStream("shubham123.txt")
+            );
+        */
 
         SequenceInputStream sequenceInputStream = new SequenceInputStream(new MyEnum()); // 2nd constructor if we have >= 2 InputStream
 
@@ -37,12 +38,13 @@ class MyEnum implements Enumeration {
 
     MyEnum() {
         try {
-            in = new InputStream[] {
+            in = new InputStream[] { // create these 3 files first before executing this code
                 new FileInputStream("shubham.txt"),
                 new FileInputStream("shubham123.txt"),
                 new FileInputStream("pss.txt")
             };
-        } catch(Exception e) {}
+            System.out.println("printing in value: " + in);
+        } catch(Exception e) {e.printStackTrace(); System.exit(1);}
     }
 
     @Override

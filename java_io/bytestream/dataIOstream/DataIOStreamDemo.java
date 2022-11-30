@@ -7,7 +7,7 @@ public class DataIOStreamDemo {
     public static void main(String[] args) throws IOException {
 
         System.out.println("---------DataOPStream-------");
-        FileOutputStream fOut = new FileOutputStream("shubham.txt");
+        FileOutputStream fOut = new FileOutputStream("DataIOStreamFileDemo.txt");
         DataOutputStream dOut = new DataOutputStream(fOut);
 
         dOut.writeInt(10);
@@ -19,7 +19,7 @@ public class DataIOStreamDemo {
 
 
         System.out.println("------------DataIOStream(reading from file)---------");
-        FileInputStream fin = new FileInputStream("shubham.txt");
+        FileInputStream fin = new FileInputStream("DataIOStreamFileDemo.txt");
         DataInputStream dinFile = new DataInputStream(fin);
 
         int i = dinFile.readInt();
@@ -32,42 +32,26 @@ public class DataIOStreamDemo {
         System.out.println("------------DataIOStream(reading from keyboard)---------");
         DataInputStream dinKb = new DataInputStream(System.in); // keyboard buffer
 
-        FileOutputStream fout = new FileOutputStream("shubham123.txt");
+        FileOutputStream fout = new FileOutputStream("DataInputStreamKeyboardDemo.txt");
         PrintStream pout = new PrintStream(fout);
 
         String readStr = "";
         while(!readStr.equals("stop")) { // continues till we type "stop"
             /* deprecated */ readStr = dinKb.readLine(); // reading line from keyboard and putting in 's'
-            pout.println(readStr); // writing in file ==> for writing line by line use `println()`, to write in same line use `writeLine()`
+            pout.println(readStr); // writing in file ==> for writing line by line use `println()`, to write in same line use `print()`
         }
 
-        
-        //-------------------------------------
-        /*
-        DataOutputStream dout = new DataOutputStream(fout);
 
-        s=""; 
-        while(!s.equals("stop")) {
-            s = din1.readLine();
-            System.out.println(s);
-            dout.writeChars(s); // write all in same line
-            //  .writeUTF(s) and .writeBytes(s) ==> unicodetext format writes in encrypted form in file, can be accessed by readUTF()
-            dout.flush(); // without flush() we can't write
-        }
-
-        s = "";
-        dinKb = new DataInputStream(new FileInputStream("ducat4.txt"));
+        System.out.println("---------------Reading data from File line-by-line-------------");
+        String s = "";
+        dinKb = new DataInputStream(new FileInputStream("DataIPStreamLineReadDemo.txt"));
         while(s!=null) {
             s= dinKb.readLine();
             if(s!=null)
                 System.out.println(s);
-        }
-        */
-
 
         dinFile.close();
         dinKb.close();
-        // dout.close();
     }
     
 }

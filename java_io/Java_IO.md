@@ -83,13 +83,19 @@ Java Program <--> DataIOStream <--> BufferedIOStream <--> FileIOStream <--> File
 We can connect this `DataInputStream` to keyboard, network to readLine from keyboard etc.
 
 
+## Keyboard entry
+
+<!-- TODO: Not able to still understand -->
+### flush()
+
+<img src="./flush_method_c_cpp.jpg"  width="550" height="500">
+<img src="./flush_method_java.jpg"  width="550" height="500">
+
+### [**FlushDemo.java**](./bytestream/dataIOstream/DataIOStreamFlushAndUTFDemo.java)
+
+Note: If we use `println()` it will write along with new line character hence fully empties the buffer. So, we didn't need to use `flush()` with `println()`. But we have also `flush()` in `PrintStream` class.
+
 ## Some important points:-
 
 * While performing any operation on File like counting freq. of characters etc. don't perform directly on file, but instead export file data to a string and perform operatn on this string. And then override the file. This will make things easier.
 * If you are using same String(buffer) again & again ; use flush() to empty that buffer.
-
-```java
-dout
-dout.writeLine("Hello"); // this will read string along with '\n' but transfer only "Hello" leaving "\n" in buffer.
-dout.flush(); // empties the buffer
-```
