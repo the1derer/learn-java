@@ -9,6 +9,8 @@ public class ConsoleClass {
     /*
      * best way to interact with console coz it is fastest for console based program
      */
+
+    //TODO: Clean code with better spaces, indents and variable names
     public static void main(String[] args) throws IOException {
         Console cs = System.console(); // static method of System class gives 'Console' class
 
