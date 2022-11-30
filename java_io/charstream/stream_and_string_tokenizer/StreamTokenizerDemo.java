@@ -15,31 +15,32 @@ import java.io.*;
 
 public class StreamTokenizerDemo {
     public static void main(String[] args) throws IOException {
-        FileInputStream fin = new FileInputStream("abc11.txt");
-        InputStreamReader ir = new InputStreamReader(fin);
-        StreamTokenizer st = new java.io.StreamTokenizer(ir);
 
-        st.eolIsSignificant(true); // accept or reject new-line character
-        st.wordChars(33, 225); // using this we tell the range of ASCII value of character in the Tokens generated
-        st.whitespaceChars(0, 32); // using this we give delimiters, '32' is space
+        FileInputStream fin = new FileInputStream("StreamTokenDemo.txt");
+        InputStreamReader ir = new InputStreamReader(fin);
+        StreamTokenizer streamTokenizer = new java.io.StreamTokenizer(ir);
+
+        streamTokenizer.eolIsSignificant(true); // accept or reject new-line character
+        streamTokenizer.wordChars(33, 225); // using this we tell the range of ASCII value of character in the Tokens generated
+        streamTokenizer.whitespaceChars(0, 32); // using this we give delimiters, '32' is space
 
         int token =0;
         int count =0;
 
         while(true) { // infinite loop
-            token = st.nextToken();
-            if(token == StreamTokenizer.TT_EOF) // TT_EOF => type of token, represnts end of file
+            token = streamTokenizer.nextToken();
+            if(token == StreamTokenizer.TT_EOF) // TT_EOF => type of token, represents end of file
                 break;
             if(token == StreamTokenizer.TT_NUMBER)
-                System.out.println(st.nval + " number");
+                System.out.println(streamTokenizer.nval + " number");
             if(token == StreamTokenizer.TT_WORD)
-                System.out.println(st.sval+" word");
+                System.out.println(streamTokenizer.sval+" word");
             count++;
         }
         System.out.println("no of words in files="+--count); // (--)decrease because it was incremented 1 more
 
         /*----------------------------------------
-         * Convertin String to 'Stream Tokens'
+         * Converting String to 'Stream Tokens'
          */
         String str = "This is a test, 200 which is simple 50";
         StringReader sr = new StringReader(str); // converts String to stream

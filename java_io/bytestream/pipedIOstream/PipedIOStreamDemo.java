@@ -16,7 +16,7 @@ public class PipedIOStreamDemo {
                     try {
                         pout.write(i); // writes ASCII values to buffer
                         Thread.sleep(1000);
-                    }catch(Exception e) {}
+                    }catch(Exception e) {e.printStackTrace();}
                 }
         }); // using lambda to implement runnable 
         
@@ -25,7 +25,7 @@ public class PipedIOStreamDemo {
             for(int i = 65; i < 91; i++) {
                 try {
                     z = pin.read();
-                } catch(Exception e) {}
+                } catch(Exception e) {e.printStackTrace();}
                 System.out.println((char)z);
             }
         }

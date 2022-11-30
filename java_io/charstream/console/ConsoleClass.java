@@ -1,4 +1,4 @@
-package java_io.charstream.console_class;
+package java_io.charstream.console;
 
 import java.io.Console;
 import java.io.IOException;
