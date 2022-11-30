@@ -1,4 +1,4 @@
-package java_io.charstream;
+package java_io.charstream.bufferedreaderwriter;
 
 /*
  * Same as BufferedIOStream

@@ -1,4 +1,4 @@
-package java_io.charstream;
+package java_io.charstream.stream_and_string_tokenizer;
 
 /*
  * Hight level stream.
@@ -13,7 +13,7 @@ package java_io.charstream;
 
 import java.io.*;
 
-public class StreamTokenizerEx {
+public class StreamTokenizerDemo {
     public static void main(String[] args) throws IOException {
         FileInputStream fin = new FileInputStream("abc11.txt");
         InputStreamReader ir = new InputStreamReader(fin);

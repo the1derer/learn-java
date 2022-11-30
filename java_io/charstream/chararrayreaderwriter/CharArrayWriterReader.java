@@ -1,4 +1,4 @@
-package java_io.charstream;
+package java_io.charstream.chararrayreaderwriter;
 
 /*
  * Connect to multiple locations or devices

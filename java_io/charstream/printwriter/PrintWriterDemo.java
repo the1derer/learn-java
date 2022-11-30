@@ -1,4 +1,4 @@
-package java_io.charstream;
+package java_io.charstream.printwriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,9 +9,8 @@ import java.io.IOException;
  */
 
 import java.io.PrintWriter;
-import java.io.FileWriter;
 
-public class PrintWriter_ {
+public class PrintWriterDemo {
     public static void main(String[] args) throws IOException {
         PrintWriter pw = new PrintWriter(new FileWriter("abc.txt"));
         pw.println("hello");

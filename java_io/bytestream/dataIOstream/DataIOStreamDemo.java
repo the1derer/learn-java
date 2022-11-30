@@ -49,6 +49,7 @@ public class DataIOStreamDemo {
             s= dinKb.readLine();
             if(s!=null)
                 System.out.println(s);
+        }
 
         dinFile.close();
         dinKb.close();

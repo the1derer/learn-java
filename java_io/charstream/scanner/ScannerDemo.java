@@ -1,8 +1,8 @@
-package java_io.charstream;
+package java_io.charstream.scanner;
 
 import java.util.Scanner;
 
-public class ScannerClass {
+public class ScannerDemo {
     /*
      * High level stream 
      * More or less like String/Stream Tokenizer

@@ -1,9 +1,9 @@
-package java_io.charstream;
+package java_io.charstream.stream_and_string_tokenizer;
 
 import java.util.StringTokenizer;
 import java.io.IOException;
 
-public class StringTokenizer_ {
+public class StringTokenizerDemo {
     
     public static void main(String[] args) {
         String s = "country = india; capital = delhi; country  = japan; capital = tokyo";
