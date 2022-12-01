@@ -5,3 +5,5 @@
 3. How to create object and use non-static method in Streams?
 4. https://stackoverflow.com/questions/7423028/java-local-variable-visibility-in-anonymous-inner-classes-why-is-final-keywo  --> d required?
 [Done] 5. What is a proxy class?
+8. BigInteger class.
+9. What is 'radix' in context of Strings? (also check radix sort)

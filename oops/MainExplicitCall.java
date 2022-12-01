@@ -1,4 +1,4 @@
-package java_101;
+package oops;
 
 class MainExplicitCall {
   public static void main (String... s) {

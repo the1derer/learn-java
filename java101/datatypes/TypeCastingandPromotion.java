@@ -1,4 +1,4 @@
-package java_101;
+package java101.datatypes;
 
 class TypeCasting {
   

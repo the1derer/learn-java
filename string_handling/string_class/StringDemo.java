@@ -113,6 +113,7 @@ class StringEx1 {
 //--------------------------------------------------------------
 
 // String formatting
+// String.format()
 
 
 // Methods of String class

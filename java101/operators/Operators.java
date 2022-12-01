@@ -1,4 +1,4 @@
-package java_101;
+package java101;
 
 public class Operators {
   public static void main(String[] args) {
