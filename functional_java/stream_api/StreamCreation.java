@@ -1,4 +1,4 @@
-package stream_api;
+package functional_java.stream_api;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;

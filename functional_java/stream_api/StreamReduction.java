@@ -1,4 +1,4 @@
-package stream_api;
+package functional_java.stream_api;
 /*
  * The API has many terminal operations which aggregate a stream to a type or to a primitive: count(), max(), min(), and sum(). However, these operations work according to the predefined implementation. So what if a developer needs to customize a Stream's reduction mechanism? There are two methods which allow us to do this, the reduce() and the collect() methods.
  */

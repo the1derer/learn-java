@@ -1,6 +1,6 @@
 // https://www.baeldung.com/java-8-streams
 
-package stream_api;
+package functional_java.stream_api;
 
 import java.util.Arrays;
 import java.util.List;
