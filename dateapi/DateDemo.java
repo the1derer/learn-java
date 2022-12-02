@@ -11,5 +11,6 @@ public class DateDemo {
      */
     public static void main(String[] args) {
         // GregorianCalendar
+        LocalDate.of(year, month, day).getDayOfWeek().toString().toUpperCase();
     }
 }
