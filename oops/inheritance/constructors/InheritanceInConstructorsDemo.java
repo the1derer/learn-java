@@ -7,6 +7,10 @@ public class InheritanceInConstructorsDemo {
 // Inheritance in constructors
 
 /*
+ * RULE: Constructors are never inherited.
+ */
+
+/*
  * Java compiler insert 'super()' at every constructor of every child as 1st line of constructor.
  */
 

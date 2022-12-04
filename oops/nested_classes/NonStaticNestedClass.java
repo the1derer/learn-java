@@ -1,4 +1,4 @@
-package nested_classes;
+package oops.nested_classes;
 
 class Outer {
 

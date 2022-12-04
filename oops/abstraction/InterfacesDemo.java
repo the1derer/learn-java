@@ -1,7 +1,8 @@
-package abstraction;
+package oops.abstraction;
 
 // interfaces are implicitly abstract, so that they can't be instantiated.
-// If the interface's methods are not 'static' and 'default' then by default they are 'public' and 'abstract'
+// If the interface's methods are not 'static' and 'default' then by default they are 'public' and
+// 'abstract'
 
 // abstract method has to be public in abstract class.
 // all methods of inheritance to achieve dynamic binding.
@@ -10,13 +11,18 @@ package abstraction;
 
 
 interface My1 {
-    void show();    
+    void show();
 }
+
+
 class Temp1 implements My1 { // no need to make this class if we go shorter route
     public void register(My1 M) {
         M.show();
     }
+
+    public void show() {}
 }
+
 
 class Child implements My1 {
     public void show() {
@@ -40,21 +46,35 @@ class Child implements My1 {
 
 // A child class can implement more than one interfaces simultaneously
 
-// If a child class is getting same method from more than 1 interfaces, then has to override that method only once.
-// If you want 
+// If a child class is getting same method from more than 1 interfaces, then has to override that
+// method only once.
+// If you want
 
 // -----------------------------------------------
 
 // One interface can extend another interface
-// one interface can extend more than 1 interfaces simultaneously. And here is the situation where java supports multiple inheritance in case of interfaces.
+// one interface can extend more than 1 interfaces simultaneously. And here is the situation where
+// java supports multiple inheritance in case of interfaces.
 // Eg.
 
-interface My2 { void show();}
-interface My3 { void display();}
-interface My4 extends My2, My3 { void xyz();}
+
+interface My2 {
+    void show();
+}
+
+
+interface My3 {
+    void display();
+}
+
+
+interface My4 extends My2, My3 {
+    void xyz();
+}
 // Here Child class that implements My4 has to override all 3 methods.
 
-//---------------------------------------------
+// ---------------------------------------------
+
 
 // Non-Static methods with Body in an interface
 interface My5 {
@@ -64,10 +84,11 @@ interface My5 {
 }
 
 /*
- * RULES:
- * If you want to make any non-static method in an interface with body then you have to qualify that method with 'default' keyword.
- * 'default' keyword can only be used within a interface.
+ * RULES: If you want to make any non-static method in an interface with body then you have to
+ * qualify that method with 'default' keyword. 'default' keyword can only be used within a
+ * interface.
  */
+
 
 // Need for non-static methods
 class Child5 implements My5 {
@@ -77,11 +98,13 @@ class Child5 implements My5 {
     }
 }
 
+
 class Child6 implements My5 {
 
     public void show() {
         System.out.println("child");
     }
+
     public static void main(String[] args) {
         My5 M = new Child6();
         M.show();
@@ -89,11 +112,13 @@ class Child6 implements My5 {
 }
 // if overridden then child, if not overridden then interfaces' method.
 
-//---------------------------
-// Now for multiple implements, if a child class is getting same 'default' method form >=1 interfaces, then it is mandatory to override that method. Otherwise compilation error.
+// ---------------------------
+// Now for multiple implements, if a child class is getting same 'default' method form >=1
+// interfaces, then it is mandatory to override that method. Otherwise compilation error.
 
 
-//-------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+
 
 // STATIC METHODs in Interfaces
 interface My7 {
@@ -102,11 +127,13 @@ interface My7 {
     }
 }
 
+
 class Child7 {// using `class Child7 implements My7` will give compilation error.
     public static void main(String[] args) {
         My7.show(); // Direct access WITHOUT using implementation
     }
 }
+
 
 // Now since static method are introduces, interfaces can also be executable
 interface My8 {
@@ -115,4 +142,4 @@ interface My8 {
     }
 }
 
-//----------------------------------------------------------
+// ----------------------------------------------------------

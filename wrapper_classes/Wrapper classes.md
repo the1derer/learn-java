@@ -19,7 +19,6 @@ Integer i = new Integer("10")
 
 **IMP:** Constructors has been deprecated and marked for removal, use 'valueOf()' instead.
 
-
 ## Converting String to wrapper objects: use static method 'valueOf(String str)'
 
 Eg:-

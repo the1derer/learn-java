@@ -1,4 +1,4 @@
-package nested_classes;
+package oops.nested_classes;
 
 /*
  * 4 categories of Nested class

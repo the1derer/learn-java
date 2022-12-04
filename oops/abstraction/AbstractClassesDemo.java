@@ -1,15 +1,20 @@
-package abstraction;
+package oops.abstraction;
 
 // Not mandatory to have at least 1 abstract method in a abstract class. Example below.
 abstract class Base1 {
     int x;
     int y;
-    
+
     void show() {
         System.out.println(x);
         System.out.println(y);
     }
+
+    public static void main(String[] args) { // abstract classes can have main
+        System.out.println("Hello");
+    }
 }
+
 
 class Child1 extends Base1 {
     void get(int x, int y) {
@@ -24,13 +29,17 @@ class Child1 extends Base1 {
     }
 }
 
-// Child class has to override all the abstract method of an abstract clas otherwide it has to make itself as a abstract too.
+// Child class has to override all the abstract method of an abstract class otherwise it has to make
+// itself as a abstract too.
 
 // ------------------------------------------------------------------------
 
-// REGISRATION
-// in case of abstraction, a child classs has to register itself with a parent class by passing its reference to a parent class.
-// for registraton, a parent class has to provide a method in which child is going to pass their reference.
+// REGISTRATION
+// in case of abstraction, a child class has to register itself with a parent class by passing its
+// reference to a parent class.
+// for registration, a parent class has to provide a method in which child is going to pass their
+// reference.
+
 
 abstract class Base2 {
     int x;
@@ -43,15 +52,16 @@ abstract class Base2 {
 
     abstract void display();
 
-    void register(Base2 b){
+    void register(Base2 b) {
         b.display();
     }
 }
 
+
 class Child2 extends Base2 {
     void get(int x, int y) {
         this.x = x;
-        this. y = y;
+        this.y = y;
     }
 
     void display() {
@@ -65,5 +75,6 @@ class Child2 extends Base2 {
 }
 
 // We can't make private methods as abstract coz they are copied to child class.
-// can't make 'static' method as abstract as ther will be no dynamic binding. Static members are not overriden they show fn hiding.
+// can't make 'static' method as abstract as ther will be no dynamic binding. Static members are not
+// overriden they show fn hiding.
 // We can keep a constructor in a abstract call but without 'new'.

@@ -1,7 +1,5 @@
 # Java Pros and Cons (These are my personal opinion and will change as I learn more or experience other paradigms)
 
-* 
-
 ## Note: Some critique can easily be solved by using different libraries and using a more extensive
 
 ## Pros
@@ -14,11 +12,11 @@
 1. A lot, like a lot of boilerplate code. Like when I started learning it there was not even `jshell` so to test even some fundamental concept you have to write a test class.
 2. Some implicit type conversion could have been nice like
 
-```java
-public String toString() {
-    return 1; // will give error as Java will not convert int to String implicitly. TODO: research why Java made this trade-off
-}
-```
+    ```java
+    public String toString() {
+        return 1; // will give error as Java will not convert int to String implicitly. TODO: research why Java made this trade-off
+    }
+    ```
 
 3. I am going to contradict my last point by saying that Java should be more strongly typed.
     (i) As seen in my GSoC period, the problem of Java and NullPointerException is really a mess.
