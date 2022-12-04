@@ -42,7 +42,7 @@ public class BufferedReaderWriterDemo {
         while(s1!=null) {
             s1 = br1.readLine();
             if(s1 != null)
-                System.out.println(s);
+                System.out.println(s1);
         }
         br1.close();
     }

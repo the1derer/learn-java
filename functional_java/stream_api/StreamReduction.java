@@ -4,6 +4,7 @@ package functional_java.stream_api;
  */
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -14,6 +15,11 @@ public class StreamReduction {
    // reduce()
    int reducedTwoParams =
    IntStream.range(1, 4).reduce(10, (a, b) -> a + b);
+
+   // Create a Logger
+   Logger log
+   = Logger.getLogger(
+      StreamReduction.class.getName());
 
   int reducedParams = Stream.of(1, 2, 3)
   .reduce(10, (a, b) -> a + b, (a, b) -> {
