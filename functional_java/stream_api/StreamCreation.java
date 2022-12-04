@@ -1,5 +1,6 @@
 package functional_java.stream_api;
 
+import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -54,7 +55,12 @@ public class StreamCreation {
 
         // Stream of file
         Path path = Paths.get("C:\\file.txt");
-        Stream<String> streamOfStrings = Files.lines(path);
+        try {
+            Stream<String> streamOfStrings = Files.lines(path);
+        } catch (IOException e) {
+            // TODO: handle exception
+        }
+        
         // Stream<String> streamWithCharset = Files.lines(path, Charset.forName("UTF-8"));
     }
 }

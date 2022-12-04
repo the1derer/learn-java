@@ -1,4 +1,4 @@
-package oops;
+package oops.constructor;
 
 // Constructors doesn't have any return type.
 // Constructors in Java, are static by nature.

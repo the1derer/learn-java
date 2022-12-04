@@ -1,3 +1,5 @@
+package enums;
+
 /*
  * Used to define a constant like days of week & month.
  * Increases readability of code.

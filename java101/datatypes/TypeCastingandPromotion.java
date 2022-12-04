@@ -1,6 +1,6 @@
 package java101.datatypes;
 
-class TypeCasting {
+class TypeCastingDemo {
   
   static void show( byte b) {
     System.out.println("this is a byte");
@@ -37,7 +37,7 @@ class TypeCasting {
   }
 }
 
-class TypePromotion {
+class TypePromotionDemo {
 
   // static void show( byte b) {
   //   System.out.println("this is a byte");
@@ -57,7 +57,7 @@ class TypePromotion {
 
   public static void main(String[] args) {
 
-    //java introduced the concept of TypePromotion in IMplicit TypeCastingPromotion of variable/constant to upper data type in absence of default data type
+    //java introduced the concept of TypePromotion in Implicit TypeCastingPromotion of variable/constant to upper data type in absence of default data type
     // NOTE: It doesn't do TypeDemotion
     byte b =10;
     show(b);

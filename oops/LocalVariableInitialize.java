@@ -1,4 +1,4 @@
-package java101;
+package oops;
 
 class LocalVariableInitialize {
   public static void main(String[] args) {

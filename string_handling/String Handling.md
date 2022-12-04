@@ -20,7 +20,7 @@
 3. I/O
     * java.util.StringTokenizer
     * java.io. StringReader
-    * java.io.StringWRiter
+    * java.io.StringWriter
 
 Java has made these many classes to provide different types of manipulation on string.
 
@@ -33,6 +33,7 @@ Java has made these many classes to provide different types of manipulation on s
 3. Replace
 4. Delete
 
-### Note:
+### Note:-
+
 * But we can't apply any of these operations on 'string' objects as they are immutable.
 * If we want to do changes or above operation then we hav to use `StringBuffer` class.

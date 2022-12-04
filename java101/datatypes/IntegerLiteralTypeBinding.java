@@ -1,7 +1,8 @@
-package java101;
+package java101.datatypes;
 
-public class IntegerLiteralTypeBinding  {
-  static void show( byte b) {
+public class IntegerLiteralTypeBinding {
+  
+  static void show(byte b) {
     System.out.println("this is a byte");
   }
 
@@ -24,10 +25,19 @@ public class IntegerLiteralTypeBinding  {
 
     byte b = 10;
     show(b); // it will bind automatically with correct data type
+
+    // ------------------------------------
+    byte x = 10;
+    byte y = 20;
+    // byte d = b+c; // this will give compilation error as in java all integer
+    // literals belong to 'int' and java will allow lossy conversion
+
+    // solution
+    byte d = (byte) (x + y);
   }
 }
 
 // char ----> int -----> long
-//             |            |
-//             |-------> float
-//             |-------> double
+// | |
+// |-------> float
+// |-------> double

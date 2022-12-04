@@ -7,3 +7,4 @@
 [Done] 5. What is a proxy class?
 8. BigInteger class.
 9. What is 'radix' in context of Strings? (also check radix sort)
+10. `BitSet` class

@@ -16,12 +16,12 @@ class StringEx1 {
 
         System.out.println("--------String constructor-----");
 
-        String s1 = new String("hello");
-        String s2 = s1.intern(); // links object of SCP to s2, if not present in SCP it will create duplicate in SCP
-        String s3 = new String("Hello");
-        String s4 = s3.intern();
+        String s11 = new String("hello");
+        String s21 = s1.intern(); // links object of SCP to s2, if not present in SCP it will create duplicate in SCP
+        String s31 = new String("Hello");
+        String s41 = s3.intern();
 
-        System.out.println(s2 == s4);
+        System.out.println(s21 == s41);
     }
 }
 

@@ -1,4 +1,4 @@
-package oops;
+package oops.encapsulation;
 public class InstanceDataMembersandMethods {
   
   // If a data member of class is not static then by default they are 'Instance'

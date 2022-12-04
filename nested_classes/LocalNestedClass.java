@@ -2,7 +2,7 @@ package nested_classes;
 
 
 /*
- * If you made local class within a static fn of a outer classs, only access static things of outer class in local class.
+ * If you made local class within a static fn of a outer class, only access static things of outer class in local class.
  * If made local class within non-static then it access all the DM and fn of outer class
  */
 class OuterEx1 {
