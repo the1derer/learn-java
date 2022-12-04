@@ -4,7 +4,7 @@ package oops.constructor;
 // Constructors in Java, are static by nature.
 // They are special static F^n, as this is the only static F^n that uses 'this'.
 
-// Contructors return 'this', see proof using program below
+// Constructors return 'this', see proof using program below
 class ConstructorExample1 {
 
     int salary;
@@ -37,13 +37,13 @@ class ConstructorExample2 {
 }
 
 // No class can exist without any constructor.
-// Rule: If there is no consturctor in a class then one non-parameterised constructor(Default) is inserted into the class by the compiler.
+// Rule: If there is no constructor in a class then one non-parameterized constructor(Default) is inserted into the class by the compiler.
 // class ConstructorExample3 { // Compilation of this will give error
 //     void show() {
 //         System.out.println("show");
 //     }
 
-//     ConstructorExample3(int x) { // parameterised constructor
+//     ConstructorExample3(int x) { // parameterized constructor
 //         System.out.println(x);
 //     }
 
@@ -53,13 +53,13 @@ class ConstructorExample2 {
 //     }
 // }
 /*
- * Above can be corrected by adding a non-parameterised contructor:
+ * Above can be corrected by adding a non-parameterized constructor:
  * ConstructorExample3() {
  *   Sysout("default");
  * }
  */
 
-// Note: If you want to initialize the data meember of each object with same values, then always use default constructor, and this concept is known as static initialisation of non-static data members.
+// Note: If you want to initialize the data member of each object with same values, then always use default constructor, and this concept is known as static initialisation of non-static data members.
 
 // NOTE: Non-static data members can also be initialized at class level
 /*
@@ -88,7 +88,7 @@ class Temp{
     ...
 }
 
-If more consturctors are present, compiler inserts initial values in all constructors
+If more constructors are present, compiler inserts initial values in all constructors
 */
 
 // In Java, Methods can be called at class level
@@ -114,7 +114,7 @@ class ClassLevelMethodCall {
     // 10
 }
 
-// In Java we can also call methods at class level to initialise the data dethods.
+// In Java we can also call methods at class level to initialise the data members.
 // If data methods is static, method must be static. Same for non-static
 
 class ClassLevelMethodCall1 {
@@ -139,7 +139,7 @@ class ClassLevelMethodCall1 {
 }
 
 // Dynamic initialisation
-// If you want to initialise data members of each object with a diff.- diff. valuew then always use Paremetersided constructors. This is known as Dynamic Initialisation of non-static data members
+// If you want to initialise data members of each object with a diff.- diff. values then always use Parameterized constructors. This is known as Dynamic Initialisation of non-static data members
 // Example:
 class DynamicInitializtion {
     int x;
@@ -281,51 +281,5 @@ class ConstructorChaining {
 // }
 
 /* 
- * We can also create this chainging when result of one constructor depends on result of another constructor.
+ * We can also create this chaining when result of one constructor depends on result of another constructor.
  */
-
-// -----------------------------------------------------------
-
-// In-It block
-
-/*
- * In-It block is always executed before every constructor.
- * You can have >1 In-It block in single class. And they are executed in the order in which they are defined in a class
- */
-
-class InitBlock {
-    int x;
-
-    {
-        x =10; // OR `this.x = 10`
-        System.out.println("init block");
-    }
-
-    InitBlock() {
-        System.out.println(x + " default");
-    }
-
-    InitBlock(int x) {
-        System.out.println(x + " parameterzided constructor");
-    }
-
-    {
-        System.out.println("Second init block");
-    }
-
-    public static void main(String[] args) {
-        new InitBlock();
-        new InitBlock(10);
-        new InitBlock();
-    }
-
-}
-
-/*
- * RULES:
- * 
- * No constructor chaining ---> complete code of 'IN-IT' block is inserted in every constructor as a first line by the compiler.
- * Constructor chaining ---> complete code of 'IN-IT' block is inserted in that constructor as 1st line in which there is no `this()` as a 1st line.
- */
-
-// Note: If you want a common task in every constructor put the  task in 'IN-IT' block

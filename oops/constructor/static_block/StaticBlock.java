@@ -1,4 +1,4 @@
-package oops;
+package oops.constructor.static_block;
 // Need explained(see example blow)
 
 class Temp100 {

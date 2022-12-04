@@ -1,5 +1,6 @@
-package inheritence;
-// By default, all the data members and F^ns of a paret class available to child class. If they are not private
+package oops.inheritance;
+
+// By default, all the data members and F^ns of a parent class available to child class, if they are not private.
 // Eg:
 class Base1 {
     int x;
@@ -26,7 +27,7 @@ class Child1 extends Base1 {
 
 // Imp Note: Inheritance happens at run times
 
-// Creating a object in child class object doesn't explicity creates a object of parent class.
+// Creating a object in child class object doesn't explicitly creates a object of parent class.
 
 
 // Child class object is always treated as parent class object as all parent class things get copied to parent class.
@@ -72,22 +73,22 @@ class Child3 extends Base3 {
 /* 
     But if we want to give priority to parent class 'x' we use 'super' keyword. eg: `Sysout(super.x)`
     If we try to use `Sysout(super)` i.e. try to print 'super', it will give a compilation error.
-    If we usse super without Data Hinding, it will work.
+    If we use `super` without Data-Hiding, it will work.
     It means 'super' is always precent implicitly.
 */
 
 /*
-    If hinding is not present , we can access parent data member in child class as
+    If hiding is not present , we can access parent data member in child class as
     1. Sysout(super.x)
     2. Sysout(x)   ----> direct
     3. Sysout(this.x)   ---> also by this coz 'x' of child class is not present.
 */
 
-// If Hinding is present we can access only by using 'super'.
+// If Hiding is present we can access only by using 'super'.
 
 //------------------------------------------------------------------------
 
-// Data Hinding in MultiLevel inheritance
+// Data Hiding in MultiLevel inheritance
 
 class Dadaji {
     int x =100;
@@ -117,7 +118,7 @@ class Child4 extends Base4 {
 
 // ---------------------------------------------------------------------------------
 
-// Member F^n in Inheritence
+// Member F^n in Inheritance
 
 class Base5 {
     void show() {
@@ -136,7 +137,7 @@ class Child5 extends Base5 {
     }
 }
 
-// F^n overriding is made to achive Dynamic binding
+// F^n overriding is made to achieve Dynamic binding
 
 
 //-------------------------------------------------------------------------------------
@@ -189,41 +190,7 @@ class Child8 extends Base8 {
     }
 }
 
-// --------------------------------------------------------------
-// Rule-4: Effect of modifiers on overriding
 
-// (i) Private --> No overriding, wcan prove using `super.show()` in child class
-/*
- * Stronger to weaker:
- * public > protected > default > private
- * can only work with (weaker) parent and (stronger) child
- */
-
-
- //----------------------------------------------------------------
-
- // (ii): Using static modifier
- /* 
-  * combination of static and non-static will not work.
-  * only static-static combination will work. But it will not be fn overriding but it is fn hinding as it will happen during compile time, instead of fn overriding which happens during runtime
-  */
-
-  // --------------------------------------------------------------
-
-  // (iii) Using final modifier
-  // If a parent class has made any fn 'final' it can't be overridden by child class.
-/*
-class Base9 {
-    final void show() {
-        System.out.println("Base");
-    }
-}
-class Child9 extends Base9 {
-    final void show() {  // ---> 
-        System.out.println("child");
-    }
-}
-*/
 //----------------------------------------------------------
 
 // DYNAMIC BINDING by Fn overriding
@@ -306,23 +273,4 @@ class Child12 extends Base12 {
         b.show();
         System.out.println(b.x); // always binds to parent class
     }
-}
-
-// Inheritance in contructors
-
-/*
- * Java compiler insert 'super()' at every constructor of every child as 1st line of constructor.
- */
-
-class BB {
-    BB(int x) {
-        System.out.println(x);
-    }
-    BB() {System.out.println("default");}
-}
-class C extends BB {
-    // C() {// error as ther is no BB() constructor
-    //     System.out.println("C");
-    // }
-    C(int x) {System.out.println(x);}
 }
