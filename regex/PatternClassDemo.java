@@ -33,8 +33,8 @@ public class PatternClassDemo {
         // matches);
 
         System.out.println("------------------meta characters------------------");
-        // runTest(".", "foo")); // '.' matches with any character
-        // runTest("foo.", "foofoo"));
+        runTest(".", "foo"); // '.' matches with any character
+        runTest("foo.", "foofoo");
 
         // The API supports several other meta characters, <([{\^-=$!|]})?*+.>,
 
@@ -44,19 +44,15 @@ public class PatternClassDemo {
         runTest("[abc]", "cab"); // 3 // order doesn't matter
         runTest("[bcr]at", "bat cat rat");
 
-        /*----------------------------------------------------
-         * Predefined character classes
-         */
-        System.out.println("Predefined Character class");
+        
+        System.out.println("--------------Predefined Character class-----------");
 
+        runTest("\\w", "H_ack12345"); // \w --> word, equivalent to [a-zA-Z_0-9]
+        runTest("\\W", "<>?{}"); // \W --> non-word
         runTest("\\d", "123"); // digits
         runTest("\\D", "a6c"); // non-digits ~~ [^0-9]
         runTest("\\s", "a c"); // white space
         runTest("\\S", "a c"); // non-white space
-        /*
-         * \w --> word, equivalent to [a-zA-Z_0-9]
-         * \W --> non-word
-         */
 
 
         System.out.println("------------------NOR------------------");
@@ -92,30 +88,27 @@ public class PatternClassDemo {
         runTest("\\a?", "hi"); // 3 // matches a text 0 or 1 time
         runTest("\\a{0,1}", "hi"); // Java regex API equivalent of above
         runTest("\\a*", "hi"); // to match a text >=0 times, "\\a{0,}" ==> Java RegEx API equivalent
-        // "\\a+" or "\a{1,}" ==> matches >=1
+        runTest("\\a+", "hi"); // or "\a{1,}" ==> matches >=1
         runTest("a{3}", "aaaaaa"); // 2 ==> matches when 'a' comes 3 times in a row
         runTest("a{2,3}", "aaaa"); // 1 // greedy
         runTest("a{2,3}?", "aaaa"); // 2 //lazy
 
 
-        //TODO
         System.out.println("------------------capturing groups------------------");
-        // treat multiple characters as a single unit
         System.out.println("Capturing groups");
         runTest("(\\d\\d)", "12"); // 1
         runTest("(\\d\\d)", "1212"); // 2
         runTest("(\\d){2,6}", "121212"); // 1
 
-        // TODO
-        runTest("(\\d\\d)\\1", "1212"); // 1 ==>
+        runTest("(\\d\\d)\\1", "1212"); // 1
+        runTest("(\\d\\d)\\1", "1213"); // 0
         runTest("(\\d\\d)(\\d\\d)", "1212"); // 1
         runTest("(\\d\\d)\\1\\1\\1", "12121212"); // 1
-        runTest("(\\d\\d)\\1", "1213"); // > 0
 
 
         System.out.println("-----------------------boundary matchers----------------");
         runTest("^dog", "dogs are friendly");// true only if found at beginning
-        runTest("^dog", "are dogs are friendly?");
+        runTest("^dog", "are dogs are friendly?"); // false
 
         runTest("dog$", "Man's best friend is a dog"); // true only if found at the last
         runTest("dog$", "is a dog man's best friend?");
