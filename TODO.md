@@ -10,9 +10,13 @@
 10. `BitSet` class and BitVectors
 11. Regex to match ==> Start with Mr., Dr., Mr. . The rest of the string must contain only one or more English alphabetic letters (upper and lowercase).
 12. <https://www.baeldung.com/sha-256-hashing-java>
-
 13. Why can't you create a array of generics?
+
 `T[] array = new T[10]`; ==> <https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java>
-    * Learn about type-erasure
-    * Co-variant and invariants (also in context of ArrayList and arrays)
+
+* Learn about type-erasure
+* Co-variant and invariants (also in context of ArrayList and arrays)
+
 14. How to know which exceptions are checked and which are unchecked? why `Exception` class is checked?
+15. Precision/Formatting a float/double value.
+16. Learn about using unicode characters in Java. And type casting to `int` or `byte` 

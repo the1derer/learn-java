@@ -101,3 +101,5 @@ byte b2 = Byte.MAX.VALUE
 int i1 = Integer.MIN_VALUE
 int i2 = Integer.MAX_VALUE
 ```
+
+**NOTE:** Some more uses of Wrapper classes are shown in [TypeCating/Overflow](../java101/datatypes/overflow/)
