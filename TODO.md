@@ -19,4 +19,4 @@
 
 14. How to know which exceptions are checked and which are unchecked? why `Exception` class is checked?
 15. Precision/Formatting a float/double value.
-16. Learn about using unicode characters in Java. And type casting to `int` or `byte` 
+16. Learn about using unicode characters in Java. And type casting to `int` or `byte`
