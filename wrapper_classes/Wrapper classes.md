@@ -92,6 +92,7 @@ int i = Integer.parseInt("10");
 long i2 = Integer.parseLong("10")
 double d1 = Double.parseDouble("3.123")
 ```
+**NOTE:** There is no `Character.parseChar()` method. Use `str.charAt(0)`.
 
 ## Wrapper Constants
 

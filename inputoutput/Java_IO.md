@@ -27,7 +27,7 @@ Note:- Stream is referred as flow of bytes.
 
 ---
 
-##  Classification of Streams
+## Classification of Streams
 
 ### There are two types of Stream
 
