@@ -14,8 +14,8 @@ x - y, x * y, x/y
 
 ```java
 int m = 89, n = 0;
-Sysout(m/n); // ==> RuntimeException(ArithmeticException)
-Sysout(m%n); // ==> RuntimeException(ArithmeticException)
+Sysout(m / n); // ==> RuntimeException(ArithmeticException)
+Sysout(m % n); // ==> RuntimeException(ArithmeticException)
 ```
 
 ## [Operator Precedence Table](./OperatorPrecedenceTable.pdf)

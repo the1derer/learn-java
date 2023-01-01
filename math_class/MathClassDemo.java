@@ -1,4 +1,4 @@
-package utility_classes;
+package math_class;
 
 /**
  * JavaMath
@@ -15,25 +15,40 @@ public class MathClassDemo {
         /*
          * Basic maths functions
          */
-
+        System.out.println("---Math.abs()---");
         int x = Math.abs(-5); // OP:5 returns absolute value
         double f = Math.abs(-2.5);
+        int modOfDifference = Math.abs(10 - 20); // same as |x - y|
 
+
+        System.out.println("---Math.pow()---");
         System.out.println(Math.pow(5, 2)); // first argument raised to the power of second
 
+        
+        System.out.println("---Math.sqrt()---");
         System.out.println(Math.sqrt(25)); // square root
 
+
+        System.out.println("---Math.max()---");
         System.out.println(Math.max(5, 10)); // returns maximum of two values
 
         System.out.println(Math.max(2, 2.5));
 
+
+        System.out.println("---Math.min()---");
         System.out.println(Math.min(5, 10)); // returns minimum between 2 values
 
+
+        System.out.println("---Math.random()---");
         double random = Math.random(); // return a pseudorandom double > 0.0 & < 1.0
         System.out.println(random);
 
+
+        System.out.println("---Math.signum()---");
         System.out.println(Math.signum(-5)); // return 1.0 if argument > 0, -1 otherwise.
 
+
+        System.out.println("---Math.copySign()---");
         System.out.println(Math.copySign(5, -1)); // return the 1st argument with the sign of 2nd argument
 
 
@@ -87,7 +102,7 @@ public class MathClassDemo {
         System.out.println(Math.getExponent(333.3)); // 8 // returns an unbiased exponent of the argument
         System.out.println(Math.getExponent(222.2f)); // 7
 
-        System.out.println(Math.IEEEremainder(5, 2)); // computes division b/w 1st and 2nd arguemtn and returns the reminder
+        System.out.println(Math.IEEEremainder(5, 2)); // computes division b/w 1st and 2nd argument and returns the reminder
 
         Math.nextAfter(1.95f, 1);
         Math.nextAfter(1.95f, 2);

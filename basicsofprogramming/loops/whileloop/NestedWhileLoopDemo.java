@@ -1,4 +1,4 @@
-package basicsofprogramming.loops;
+package basicsofprogramming.loops.whileloop;
 
 public class NestedWhileLoopDemo {
     public static void main(String[] args) {

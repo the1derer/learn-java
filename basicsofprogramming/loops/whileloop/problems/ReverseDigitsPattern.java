@@ -36,7 +36,7 @@ public class ReverseDigitsPattern {
 
         // without using 'temp' variable
         while (N/multipleOf10 > 9) {
-            multipleOf10 *= 10;
+            multipleOf10 *= 10; // divide as many times as you want the digit to be gone
         }
 
         while (multipleOf10 > 0) {
