@@ -1,4 +1,4 @@
-package exception_handling;
+package exceptions;
 
 class ExceptionDemoNotHandled {
     public static void main(String[] args) {

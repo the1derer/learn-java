@@ -1,4 +1,4 @@
-package string_handling.string_class;
+package strings.string_class;
 
 
 

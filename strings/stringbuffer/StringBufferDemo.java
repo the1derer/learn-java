@@ -1,4 +1,4 @@
-package string_handling.stringbuffer;
+package strings.stringbuffer;
 
 
 // NOTE: Never create a object of StringBuffer via literal
