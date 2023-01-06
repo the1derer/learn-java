@@ -1,4 +1,4 @@
-package string_handling.formatedstring;
+package strings.formatedstring;
 
 import java.util.stream.IntStream;
 
