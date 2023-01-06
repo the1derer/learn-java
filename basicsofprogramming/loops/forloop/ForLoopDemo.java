@@ -22,10 +22,6 @@ public class ForLoopDemo {
         // for (int i = 0, j =1, double d = 1; ; i++, j++) { // can't define variable of >1 type
         // }
 
-        double d;
-        int i, j;
-        for (i = 0, j = 1, d = 4; ; i++, j++) {
-        }
 
 
         int i = 0;
@@ -42,12 +38,18 @@ public class ForLoopDemo {
             i++; // incrementing here.
         }
 
-        for (int j = 0; ;j++) { // infinite loop
+        for (int k = 0; ;k++) { // infinite loop
             System.out.println("Happy!");
         }
 
-        for (int j = 0, i = 0; i < 5 && j < 7; i++, j+= 2) {
+        // for (int j = 0, i = 0; i < 5 && j < 7; i++, j+= 2) {
             
-        }
+        // }
+
+
+        // double d;
+        // int i, j;
+        // for (i = 0, j = 1, d = 4; ; i++, j++) {
+        // }
     }
 }

@@ -1,6 +1,6 @@
 package arrays;
 
-public class ArrayDemo {
+public class ArraysDemo {
     public static void main(String[] args) {
         int[] marks = new int[3];
         marks[3] = 20; // Runtime Error
@@ -14,6 +14,8 @@ public class ArrayDemo {
         // arr2[8] = 0; // compilation error
 
         int[] arr3 = {1, 2, 3, 4};
+
+        // arr3 = {4, 5, 6}; // compilation error, "Array constants can only be used in initialization"
 
         int N;
         // int[] arr4 = new int [N]; // compilation error as 'N' has not been 
