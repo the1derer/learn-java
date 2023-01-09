@@ -3,6 +3,7 @@ package strings.formatedstring;
 import java.util.stream.IntStream;
 
 // TODO: https://dzone.com/articles/java-string-formatting
+// TODO: format specifier for character, bytes and String
 public class FormattedStringDemo {
     public static void main(String[] args) {
         int x = 109, y = 9;
@@ -22,5 +23,11 @@ public class FormattedStringDemo {
         IntStream.range(1, 10).forEach(i -> {
             System.out.printf("2 %c %d = %d\n", 'x', i, 2 * i);
         });
+
+        String hello = "Hello";
+        System.out.printf("%s world!\n", hello);
+
+        byte[] world = {'W', 'O', 'R', 'L', 'D'};
+        System.out.printf("%s\n", world); // doesn't work as c/c++, ref. id is printed, instead of actual value
     }
 }

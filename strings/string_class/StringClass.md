@@ -1,6 +1,7 @@
 # `String` class
 
 * In Java's `String` class makes use of `private byte` array.
+    * **TODO**: How Does String store unicode values which are > Byte.MAX_VALUE?
 * This means in Java alo, Strings are represented via hidden Arrays.
 * So, whenever we create String object, Java extracts ASCII value of character and puts them in `byte` type array.
 
